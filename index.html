@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Encriptador</title>
+    
+</head>
+<body>
+    <div class="frame6">
+        <img src="img/Logo.png" class="logo">
+    </div>
+    <div class="rectangle"></div>
+    <div class="frame5" id="frame5">
+        <p class="txt1">Ningún mensaje encontrado</p>
+        <p class="txt2">Introduzca el texto que desea cifrar o descifrar.</p>
+    </div>
+    <div class="frame1">
+        <div>
+            <img src="img/Vector.png">
+        </div>
+        <p>Solo letras minúsculas y sin acento</p>
+    </div>
+    <div class="frame3">
+        <button class="btncriptador" onclick="encriptar()">
+            <a>Encriptar</a>
+        </button>
+        <button class="btncriptador2" onclick="desencriptar()">
+            <a>Descifrar</a>
+        </button>
+    </div>
+    <div class="picture" id="picture">
+        <img src="img/High quality products 1 1.png">
+    </div>
+    <p contenteditable onfocus="hidePlaceholder(this)" class="core" id="texto" onblur="showPlaceholder(this)">Digite su texto...</p>
+    <p class="resultado" id="result"></p>
+    <button class="copiar" id="copiar" onclick="copiarTexto()"><a>Copiar</a></button>
+
+
+    <script src="js/index.js"></script>
+</body>
+</html>
